@@ -1,4 +1,4 @@
-package com.natamus.giantspawn.forge.mixin;
+package com.natamus.giantspawn.mixin;
 
 import com.natamus.giantspawn.ai.GiantAttackGoal;
 import com.natamus.giantspawn.ai.GiantAttackTurtleEggGoal;

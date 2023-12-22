@@ -1,15 +1,16 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.natamus.giantspawn.neoforge.mixin",
-  "plugin": "com.natamus.collective.neoforge.mixin.plugin.NeoForgeMixinConfigPlugin",
+  "package": "com.natamus.giantspawn.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "GiantMixin"
+  	"GiantMixin"
   ],
   "client": [
+  
   ],
   "server": [
+
   ],
   "injectors": {
     "defaultRequire": 1
