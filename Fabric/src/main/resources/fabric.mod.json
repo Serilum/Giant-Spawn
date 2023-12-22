@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "giantspawn",
-  "version": "4.9",
+  "version": "5.0",
 
   "name": "Giant Spawn",
   "description": "Allows the giant to spawn naturally and other tweaks.",
@@ -18,7 +18,7 @@
   "environment": "*",
   "entrypoints": { "main": [ "com.natamus.giantspawn.ModFabric" ], "modmenu": [ "com.natamus.giantspawn.fabric.config.IntegrateModMenu" ] },
   "mixins": [
-    "giantspawn_fabric.mixins.json"
+    "giantspawn.mixins.json"
   ],
 
   "depends": {
@@ -26,7 +26,7 @@
     "fabric": "*",
     "minecraft": ">=1.19",
     "java": ">=17",
-    "collective": ">=7.21"
+    "collective": ">=7.26"
   },
 
   "custom": {
