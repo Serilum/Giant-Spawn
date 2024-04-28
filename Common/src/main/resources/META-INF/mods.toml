@@ -6,7 +6,7 @@ logoFile="icon.png"
 
 [[mods]]
 modId="giantspawn"
-version="5.0"
+version="5.1"
 displayName="Giant Spawn"
 displayURL="https://serilum.com/mod/giant-spawn"
 authors="Rick South"
@@ -22,7 +22,7 @@ If you would like to contribute too, check out https://serilum.com/donate. Appre
 [[dependencies.giantspawn]]
     modId="collective"
     mandatory=true
-    versionRange="[7.53,)"
+    versionRange="[7.54,)"
     ordering="NONE"
     side="BOTH"
 
