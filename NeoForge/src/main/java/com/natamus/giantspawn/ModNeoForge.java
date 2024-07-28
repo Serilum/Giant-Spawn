@@ -1,6 +1,7 @@
 package com.natamus.giantspawn;
 
 import com.natamus.collective.check.RegisterMod;
+import com.natamus.collective.check.ShouldLoadCheck;
 import com.natamus.giantspawn.neoforge.config.IntegrateNeoForgeConfig;
 import com.natamus.giantspawn.neoforge.events.NeoForgeGiantEvent;
 import com.natamus.giantspawn.util.Reference;
@@ -14,6 +15,10 @@ import net.neoforged.fml.event.lifecycle.FMLLoadCompleteEvent;
 public class ModNeoForge {
 	
 	public ModNeoForge(IEventBus modEventBus) {
+		if (!ShouldLoadCheck.shouldLoad(Reference.MOD_ID)) {
+			return;
+		}
+
 		modEventBus.addListener(this::loadComplete);
 
 		setGlobalConstants();
