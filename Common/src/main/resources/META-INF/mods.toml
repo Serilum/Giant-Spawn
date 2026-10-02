@@ -1,28 +1,28 @@
 modLoader="javafml"
 loaderVersion="*"
-license="All rights reserved"
+license="All Rights Reserved"
 issueTrackerURL="https://github.com/Serilum/.issue-tracker/labels/Mod:%20Giant%20Spawn"
 logoFile="icon.png"
 
 [[mods]]
 modId="giantspawn"
-version="5.3"
+version="5.4"
 displayName="Giant Spawn"
 displayURL="https://serilum.com/mod/giant-spawn"
-authors="Rick South"
+authors="Serilum"
 description='''Allows the giant to spawn naturally and other tweaks.
 '''
 credits='''Thank you very much to my Membership sponsors for supporting the development of this mod:  
 
-Alister, Andrean Olgo, aternosorg, Cherriesaurus, David Sanchez, drdog111, Michael W. S., t128, Tyler Behl, XAgent   
+Andrean Olgo, AnyankaT, aternosorg, Cherriesaurus, Linda Jansen, MWS, Tyler Behl   
 
-If you would like to contribute too, check out https://serilum.com/donate. Appreciate it! <3   
+If you would like to contribute too, check out https://serilum.com/donate Appreciate it! <3   
 '''
 
 [[dependencies.giantspawn]]
     modId="collective"
     mandatory=true
-    versionRange="[7.91,)"
+    versionRange="[8.40,)"
     ordering="NONE"
     side="BOTH"
 
