@@ -1,4 +1,4 @@
-package com.natamus.giantspawn.ai;
+package com.serilum.giantspawn.ai;
 
 import com.natamus.collective.data.GlobalVariables;
 

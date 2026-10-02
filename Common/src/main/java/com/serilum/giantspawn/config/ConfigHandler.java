@@ -1,7 +1,7 @@
-package com.natamus.giantspawn.config;
+package com.serilum.giantspawn.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.giantspawn.util.Reference;
+import com.serilum.giantspawn.util.Reference;
 
 import java.util.Arrays;
 import java.util.HashMap;

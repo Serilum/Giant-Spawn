@@ -1,8 +1,8 @@
-package com.natamus.giantspawn.events;
+package com.serilum.giantspawn.events;
 
 import com.natamus.collective.functions.BlockPosFunctions;
 import com.natamus.collective.functions.HashMapFunctions;
-import com.natamus.giantspawn.config.ConfigHandler;
+import com.serilum.giantspawn.config.ConfigHandler;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.Entity;

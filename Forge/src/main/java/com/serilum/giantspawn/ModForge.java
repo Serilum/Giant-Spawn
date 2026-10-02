@@ -1,10 +1,10 @@
-package com.natamus.giantspawn;
+package com.serilum.giantspawn;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.giantspawn.forge.config.IntegrateForgeConfig;
-import com.natamus.giantspawn.forge.events.ForgeGiantEvent;
-import com.natamus.giantspawn.util.Reference;
+import com.serilum.giantspawn.forge.config.IntegrateForgeConfig;
+import com.serilum.giantspawn.forge.events.ForgeGiantEvent;
+import com.serilum.giantspawn.util.Reference;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;

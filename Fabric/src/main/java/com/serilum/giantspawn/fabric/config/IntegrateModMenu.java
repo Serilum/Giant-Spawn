@@ -1,7 +1,7 @@
-package com.natamus.giantspawn.fabric.config;
+package com.serilum.giantspawn.fabric.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.giantspawn.util.Reference;
+import com.serilum.giantspawn.util.Reference;
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
 

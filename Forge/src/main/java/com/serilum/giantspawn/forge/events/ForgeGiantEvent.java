@@ -1,6 +1,6 @@
-package com.natamus.giantspawn.forge.events;
+package com.serilum.giantspawn.forge.events;
 
-import com.natamus.giantspawn.events.GiantEvent;
+import com.serilum.giantspawn.events.GiantEvent;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.event.TickEvent.LevelTickEvent;

@@ -1,9 +1,9 @@
-package com.natamus.giantspawn;
+package com.serilum.giantspawn;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.giantspawn.events.GiantEvent;
-import com.natamus.giantspawn.util.Reference;
+import com.serilum.giantspawn.events.GiantEvent;
+import com.serilum.giantspawn.util.Reference;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;

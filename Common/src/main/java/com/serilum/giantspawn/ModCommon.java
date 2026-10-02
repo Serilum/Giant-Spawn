@@ -1,7 +1,7 @@
-package com.natamus.giantspawn;
+package com.serilum.giantspawn;
 
 import com.natamus.collective.objects.SAMObject;
-import com.natamus.giantspawn.config.ConfigHandler;
+import com.serilum.giantspawn.config.ConfigHandler;
 import net.minecraft.world.entity.EntityType;
 
 public class ModCommon {

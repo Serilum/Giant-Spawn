@@ -1,4 +1,4 @@
-package com.natamus.giantspawn.ai;
+package com.serilum.giantspawn.ai;
 
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.monster.Giant;

@@ -1,7 +1,7 @@
-package com.natamus.giantspawn.mixin;
+package com.serilum.giantspawn.mixin;
 
-import com.natamus.giantspawn.ai.GiantAttackGoal;
-import com.natamus.giantspawn.ai.GiantAttackTurtleEggGoal;
+import com.serilum.giantspawn.ai.GiantAttackGoal;
+import com.serilum.giantspawn.ai.GiantAttackTurtleEggGoal;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
