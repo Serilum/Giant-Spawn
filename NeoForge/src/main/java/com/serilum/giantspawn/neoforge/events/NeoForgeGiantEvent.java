@@ -2,15 +2,23 @@ package com.serilum.giantspawn.neoforge.events;
 
 import com.serilum.giantspawn.events.GiantEvent;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.event.tick.LevelTickEvent;
 import net.neoforged.neoforge.event.entity.EntityJoinLevelEvent;
+import net.neoforged.neoforge.event.entity.living.LivingDropsEvent;
 import net.neoforged.bus.api.SubscribeEvent;
 
 public class NeoForgeGiantEvent {
 	@SubscribeEvent
 	public static void onEntityJoin(EntityJoinLevelEvent e) {
 		GiantEvent.onEntityJoin(e.getLevel(), e.getEntity());
+	}
+
+	@SubscribeEvent
+	public static void onEntityDropLoot(LivingDropsEvent e) {
+		LivingEntity livingEntity = e.getEntity();
+		GiantEvent.onEntityDropLoot(livingEntity.level(), livingEntity);
 	}
 	
 	@SubscribeEvent

@@ -2,13 +2,16 @@ package com.serilum.giantspawn;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
+import com.natamus.collective.fabric.callbacks.CollectiveEntityEvents;
 import com.serilum.giantspawn.events.GiantEvent;
 import com.serilum.giantspawn.util.Reference;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.level.Level;
 
 public class ModFabric implements ModInitializer {
 	
@@ -29,6 +32,10 @@ public class ModFabric implements ModInitializer {
 	private void loadEvents() {
 		ServerEntityEvents.ENTITY_LOAD.register((Entity entity, ServerLevel world) -> {
 			GiantEvent.onEntityJoin(world, entity);
+		});
+
+		CollectiveEntityEvents.ON_ENTITY_IS_DROPPING_LOOT.register((Level world, Entity entity, DamageSource damageSource) -> {
+			GiantEvent.onEntityDropLoot(world, entity);
 		});
 
 		ServerTickEvents.START_LEVEL_TICK.register((ServerLevel world) -> {
