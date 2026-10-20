@@ -2,9 +2,11 @@ package com.serilum.giantspawn.forge.events;
 
 import com.serilum.giantspawn.events.GiantEvent;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.event.TickEvent.LevelTickEvent;
 import net.minecraftforge.event.entity.EntityJoinLevelEvent;
+import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import net.minecraftforge.eventbus.api.bus.BusGroup;
 import net.minecraftforge.eventbus.api.listener.SubscribeEvent;
 
@@ -18,6 +20,12 @@ public class ForgeGiantEvent {
 	@SubscribeEvent
 	public static void onEntityJoin(EntityJoinLevelEvent e) {
 		GiantEvent.onEntityJoin(e.getLevel(), e.getEntity());
+	}
+
+	@SubscribeEvent
+	public static void onEntityDropLoot(LivingDropsEvent e) {
+		LivingEntity livingEntity = e.getEntity();
+		GiantEvent.onEntityDropLoot(livingEntity.level(), livingEntity);
 	}
 	
 	@SubscribeEvent
